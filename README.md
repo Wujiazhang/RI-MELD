@@ -1,5 +1,3 @@
-Method Overview
-
 RI-MELD is based on the MELD framework, which combines molecular dynamics simulations with external restraints to enhance protein structure sampling. In the original MELD-based adaptive scheme, the number of active restraints is sampled during the simulation, while a reward term is used to encourage the activation of additional restraints.
 
 In RI-MELD, this reward term is adaptively updated according to the rule-importance criterion. The rule importance evaluates whether recent changes in the active restraint set improve or worsen the restraint energy. Based on this evaluation, RI-MELD dynamically adjusts the restraint activation process during sampling.
