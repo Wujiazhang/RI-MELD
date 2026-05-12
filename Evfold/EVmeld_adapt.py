@@ -183,7 +183,7 @@ def setup_system():
     policy_1 = adaptor.AdaptationPolicy(2.0, 50, 50)
     a = adaptor.EqualAcceptanceAdaptor(n_replicas=N_REPLICAS, adaptation_policy=policy_1, min_acc_prob=0.02)
 
-    remd_runner = remd.leader.LeaderReplicaExchangeRunner(N_REPLICAS, max_steps=N_STEPS, ladder=l, adaptor=a, bias=31)
+    remd_runner = remd.leader.LeaderReplicaExchangeRunner(N_REPLICAS, max_steps=N_STEPS, ladder=l, adaptor=a)
     store.save_remd_runner(remd_runner)
 
     # create and store the communicator
